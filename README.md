@@ -19,3 +19,16 @@ A robust deep learning system that automatically detects vehicle accidents in re
 ## 📁 Project Architecture
 
 The system follows a modular two-stage pipeline:
+Input Module (Video Stream)
+|
+
+Object Detection (YOLOv7) -> Detects vehicles, pedestrians, etc.
+|
+
+Spatial-Temporal Feature Extraction -> Tracks objects over frames
+|
+
+Accident Classification CNN -> Analyzes features for crash prediction
+|
+
+Alert System -> Triggers alerts if probability exceeds threshold
